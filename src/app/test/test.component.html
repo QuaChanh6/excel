@@ -1,0 +1,8 @@
+<p *ngFor="let i of hero | slice:1:3 ">{{i| pipeTest:10}}</p>
+<label>Giờ hiện tại: </label>
+<p>{{today | date:"MM/dd/yy" | lowercase}}</p>  
+
+<input type="text"  [(ngModel)]='inputNumber'>
+<p>{{inputNumber|pipeTest:10}}</p>
+<button (click)=" download()">Download</button>
+<div id="xspreadsheet"></div>
